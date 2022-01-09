@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Home page</title>
+        <link rel="stylesheet" href="./assets/styles/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h2 class="header-title">Calc</h2>
+            </header>
+
+            <div class="form-wrapper">
+                <form class="form" id="form">
+                    <span class="form-text__area"> Number : </span>
+                    <input class="form-input" type="number" step="1" min="0" />
+                </form>
+
+                <div class="form-btns">
+                    <button class="btn plus">+</button>
+                    <button class="btn substract">-</button>
+                    <button class="btn divide">/</button>
+                    <button class="btn multiply">*</button>
+                </div>
+
+                <section class="current-comp">
+                    Current computation :
+                    <div class="computation"></div>
+                </section>
+                <section id="result">
+                    Result is :
+                    <div class="current-result"></div>
+                </section>
+            </div>
+            <footer class="footer">All Rights Records 2022 (c)</footer>
+        </div>
+        <script src="./assets/scripts/view.js"></script>
+        <script src="./assets/scripts/modal.js"></script>
+    </body>
+</html>
